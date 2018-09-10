@@ -1,0 +1,27 @@
+<html>
+<head>    
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+</head>
+<body>
+ 	 	 <form name = "editContactForm">
+  			First name:<br>
+  				<input type="text" id="firstNameID" name="firstName" required >
+  			<br>
+ 			 Last name:<br>
+  				<input type="text" name="lastName" id="lastNameID" required>
+  			<br>
+  			Phone number: <br>
+  				<input type = "text" name = "phone" id="phoneID" required="">
+  			<input type="button" onclick="javascript:submitedEditForm();" value = "Save"> 
+		</form>
+ 	<div id="cancelButton"> 
+ 		<button onclick="javascript:cancelButton()"> Cancel </button>
+ 	</div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+    	autoFillContact();
+    })
+</script>
+</html>

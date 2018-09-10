@@ -1,0 +1,32 @@
+<html>
+<head>    
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<link href="master.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id = "page1">
+    <form name = "addUserForm">
+  			First name:<br>
+  				<input type="text" id="firstNameID" name="firstName" required >
+  			<br>
+ 			 Last name:<br>
+  				<input type="text" name="lastName" id="lastNameID" required>
+  			<br>
+  			Email: <br>
+  				<input type="text" id = "emailID" name = "email" required>
+  			<br>
+  			Password: <br>
+  				<input type = "text" name = "password" id="passwordID" required>
+  			<input type="button" onclick="javascript:submitNewUser();" value = "Save"> 
+		</form>
+   <div id="cancelButton"> 
+ 		<button onclick="javascript:goHome()"> Cancel </button>
+ 		
+ 	</div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+    	createTable();
+    })
+</script>
+</html>
